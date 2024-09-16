@@ -1,0 +1,88 @@
+<!DOCTYPE HTML>
+<html lang="en">
+
+<head>
+
+    <!-- CSS -->
+    <style>
+        .wrapper {
+
+            /* aligns items and text on the center of the page (or whatever it is wrapped in) */
+            text-align: center;
+            align-items: center;
+
+            /* aligns whatever is inside in a column */
+            display: block;
+        }
+
+        .heading {
+            font-size: 60px;
+            font-weight: bold;
+            color: red;
+        }
+
+        .subheading {
+            font-size: 25px;
+            background-color: greenyellow;
+            padding: 50px;
+            margin: 50px;
+        }
+        .submitBtn {
+
+            /* Color is for text */
+            color: white;
+
+            /* bg color is for the bg */
+            background-color: blue;
+            padding: 15px;
+
+            /* Round out edges */
+            border-radius: 8px;
+
+            border-width: 4px;
+            border-color: purple;
+
+            /* Smooth transitions for when you hover over button */
+            /* Without this, the transition below will still happen, just instantly */
+            transition: background-color 0.3s ease, border-color 0.3s ease;
+        }
+
+        /* Adds a special effect for the button */
+        /* Hover is for the mouse, focus is for mobile (when you tap on it) */
+        .submitBtn:hover,
+        .submitBtn:focus {
+            background-color: darkblue;
+            border-color: maroon;
+        }
+    </style>
+
+    <!-- JavaScript -->
+    <script>
+
+        //When the btn is pressed, this function is called
+        function alertFunction() {
+            alert("TEST");
+        }
+
+    </script>
+</head>
+
+<!-- HTML -->
+<body>
+    
+    <!-- Wrapper -->
+     <!-- It is always smart to wrap your html is some container to organize all items -->
+    <div class="wrapper">
+
+        <!-- Titles -->
+         <!-- div is short for division, or essentially a section. It is a simple way to create rectangles and/or text -->
+          <!-- the class name you give it is what you use in CSS to give it style -->
+        <div class="heading">Crazy Big Heading</div>
+        <div class="subheading">Smaller not so crazy heading</div>
+
+        <!-- Submit Button -->
+         <!-- for button, the function you have for onclick is what will happen upon being pressed -->
+        <button class="submitBtn" onclick="alertFunction()">Alert</button>
+    </div>
+</body>
+</html>
