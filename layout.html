@@ -5,46 +5,66 @@
 
     <!-- CSS -->
     <style>
+        /* body is the website itself */
+        body {
+
+            /* change bg color */
+            background-color: rgb(38, 38, 38);
+        }
         .wrapper {
 
             /* aligns items and text on the center of the page (or whatever it is wrapped in) */
             text-align: center;
             align-items: center;
 
-            /* aligns whatever is inside in a column */
-            display: block;
+            background-color: rgb(53, 53, 53);
+            padding: 10px;
         }
 
         .heading {
             font-size: 60px;
             font-weight: bold;
-            color: red;
+        }
+
+        /* Great way to not retype the same code */
+        /* heading, subheading, and submitBtn will both have text color as white will still */
+        /* having their seperate properties */
+        .heading,
+        .subheading,
+        .submitBtn {
+            color: white;
         }
 
         .subheading {
             font-size: 25px;
-            background-color: greenyellow;
+            background-color: black;
+
             padding: 50px;
             margin: 50px;
         }
+
+        .subheading,
+        .wrapper,
         .submitBtn {
+            /* rounds out edges */
+            border-radius: 12px;
+        }
 
-            /* Color is for text */
-            color: white;
-
+        .submitBtn {
             /* bg color is for the bg */
-            background-color: blue;
-            padding: 15px;
+            background-color: darkred;
 
-            /* Round out edges */
-            border-radius: 8px;
+            /* You can add different padding for each side (applies to margin also) */
+            /* top right bottom left */
+            padding: 20px 50px 20px 50px;
 
             border-width: 4px;
-            border-color: purple;
+            border-color: black;
+            border-style: solid;
 
             /* Smooth transitions for when you hover over button */
             /* Without this, the transition below will still happen, just instantly */
-            transition: background-color 0.3s ease, border-color 0.3s ease;
+            transition: background-color 0.5s ease, border-color 0.5s ease;
         }
 
         /* Adds a special effect for the button */
@@ -52,7 +72,7 @@
         .submitBtn:hover,
         .submitBtn:focus {
             background-color: darkblue;
-            border-color: maroon;
+            border-color: white;
         }
     </style>
 
